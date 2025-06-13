@@ -7,7 +7,7 @@ import Feature from './pages/Feature/Feature';
 import Ecom from './pages/Ecom/Ecom';
 import { Link,Route,Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
-
+import Robot from './pages/Robot/Robot';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,7 +17,8 @@ function App() {
     <Link to ="/">Home</Link><br/>
     <Link to ="/resume">Resume</Link><br/>
     <Link to ="/feature">Feature</Link><br/>
-    <Link to ="/ecom">Ecom</Link>
+    <Link to ="/ecom">Ecom</Link><br/>
+    <Link to ="/robot">Robot</Link>
     </nav>
     
     <Routes>
@@ -25,6 +26,7 @@ function App() {
       <Route path="/resume"element={< Resume/>}/>
       <Route path="/feature"element={< Feature/>}/>
       <Route path="/ecom"element={< Ecom/>}/>
+      <Route path="/robot"element={<Robot/>}/>
     </Routes>
     
       <div>
