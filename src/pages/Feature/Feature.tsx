@@ -1,4 +1,4 @@
-function Feature(){
+function Feature() {
     return "Feature";
 
 }

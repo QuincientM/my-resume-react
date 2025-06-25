@@ -8,18 +8,16 @@ import Ecom from './pages/Ecom/Ecom';
 import { Link,Route,Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Robot from './pages/Robot/Robot';
+import Header from './components/Header/Header';
+
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <nav>
-    <Link to ="/">Home</Link><br/>
-    <Link to ="/resume">Resume</Link><br/>
-    <Link to ="/feature">Feature</Link><br/>
-    <Link to ="/ecom">Ecom</Link><br/>
-    <Link to ="/robot">Robot</Link>
-    </nav>
+    
+    <Header/>
     
     <Routes>
       <Route path="/"element={< Home/>}/>

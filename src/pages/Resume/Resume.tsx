@@ -1,4 +1,4 @@
-function Resume(){
+function Resume() {
     return "Resume";
 
 }

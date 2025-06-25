@@ -1,4 +1,4 @@
-function Ecom(){
+function Ecom() {
     return "Ecom";
 
 }
