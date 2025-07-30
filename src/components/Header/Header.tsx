@@ -1,18 +1,22 @@
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
 import { useState } from 'react'
-function Header(){
-        const name = "Quincient";
-     const [isLoggedIn, setIsLoggedIn] = useState(false);
-     function login(){
-        setIsLoggedIn(true)
-    
 
+
+function Header(){
+        const navigate = useNavigate();
+        const name = "Quincient";
+        const [isLoggedIn, setIsLoggedIn] = useState(false);
+        function login(){
+            //setIsLoggedIn(true)
+    
+            navigate('/login');
+            
      }
 
      function logout(){
         setIsLoggedIn(false)
      }
-     // console.log("user is ",isLoggedIn)
+     console.log("user is ",isLoggedIn)
     return (
         <>
             <nav>
@@ -21,7 +25,9 @@ function Header(){
                 <Link to ="/feature">Feature</Link>
                 <Link to ="/ecom">Ecom</Link>
                 <Link to ="/robot">Robot</Link>
+                <Link to ="/login">Login</Link>
             </nav>
+            
              {
                  isLoggedIn?
                  (
@@ -45,7 +51,7 @@ function Header(){
                 </span>
                 &nbsp; &nbsp;
                 
-                <span onClick={ () => login()}>
+                <span onClick={ login}>
                     login
                     
 
@@ -54,6 +60,8 @@ function Header(){
 
                  }
             <br></br>
+            
+    
         </>
     );
 

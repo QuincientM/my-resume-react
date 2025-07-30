@@ -5,18 +5,18 @@ import './App.css'
 import Resume from './pages/Resume/Resume';
 import Feature from './pages/Feature/Feature';
 import Ecom from './pages/Ecom/Ecom';
-import { Link,Route,Routes } from 'react-router-dom';
+import { Route,Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Robot from './pages/Robot/Robot';
 import Header from './components/Header/Header';
-
+import Login from './pages/Login/Login';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    
+
     <Header/>
     
     <Routes>
@@ -25,6 +25,7 @@ function App() {
       <Route path="/feature"element={< Feature/>}/>
       <Route path="/ecom"element={< Ecom/>}/>
       <Route path="/robot"element={<Robot/>}/>
+      <Route path="/login" element={<Login />} />
     </Routes>
     
       <div>
