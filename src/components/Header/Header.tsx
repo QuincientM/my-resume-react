@@ -24,7 +24,6 @@ function Header(){
                 <Link to ="/resume">Resume</Link>
                 <Link to ="/feature">Feature</Link>
                 <Link to ="/ecom">Ecom</Link>
-                <Link to ="/robot">Robot</Link>
                 <Link to ="/login">Login</Link>
             </nav>
             
