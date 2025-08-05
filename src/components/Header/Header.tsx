@@ -25,7 +25,7 @@ function Header(){
                 <Link to ="/feature">Feature</Link>
                 <Link to ="/ecom">Ecom</Link>
                 <Link to ="/login">Login</Link>
-            </nav>
+            
             
              {
                  isLoggedIn?
@@ -58,6 +58,7 @@ function Header(){
             </span>)
 
                  }
+                 </nav>
             <br></br>
             
     
