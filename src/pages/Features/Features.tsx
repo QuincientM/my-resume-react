@@ -9,7 +9,7 @@ export default function Feature() {
           <li key={index}>{language}</li>
         ))}
       </ul>
-      <a href="myfirstwebpage/index.html" >Click here</a>
+      <a href="myfirstwebpage/index.html" >My First Webpage</a>
     </div>
   );
 }
