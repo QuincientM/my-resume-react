@@ -9,7 +9,7 @@ export default function Ecom() {
             <ProductList/>
             <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          Likes are {count}
         </button>
       </div>
     </div>

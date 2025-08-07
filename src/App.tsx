@@ -3,7 +3,7 @@
 //import viteLogo from '/vite.svg'
 import './App.css'
 import Resume from './pages/Resume/Resume';
-import Feature from './pages/Feature/Feature';
+import Feature from './pages/Features/Features';
 import Ecom from './pages/Ecom/Ecom';
 import { Route,Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
